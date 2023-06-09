@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------------------------
+Project structure:
+
+src/main/java:
+	com.config:
+		Config.properties
+		
+	com.pages:
+		Login_Page.java
+		Product_Page.java
+		Cart_Page.java
+		CheckOut_Page
+			
+	com.utility:
+		Config.java
+		ConfigReader.java
+		ExcelReader.java
+		ExtentReporterManager.java
+		Utility.java
+		
+	testdata:
+	     Expected_Result.xlsx	
+		
+src/test/java:
+	apphooks:
+		ApplicationHooks.java
+	
+	login_stepdefinitions:
+		LoginPageSteps.java
+		
+	product_stepdefinitions:
+	    Product_Step_Page.java
+	    	
+	cart_stepdefinitions:
+	    Cart_Step_Page.java
+	 
+	outline_stepdefinitions:
+	    Expected_Stepdefinitions.java
+	    
+	excel_stepdefinition:
+	   Excel_StepDefinition.java       	
+		
+	testrunner:
+		CartPage_TestRunner.java
+	
+	testrunner_excel:
+	    Excel_TestRunner.java
+	    
+	testrunner_outline:
+	    Outline_TestRunner.java    	
+			
+		
+src/main/resources:
+	ReadMe
+						
+src/test/resources:
+	Features folder
+		Cart1.feature
+		CartOutline.feature
+		Excel.feature
+	testng.xml		
+
+drivers folder:
+	chromedriver.exe
+	
+extent_reports folder:
+
+report:
+
+	
+	
+screenshots folder:
+	file.png	
+	
+pom.xml			
+--------------------------------------------------------------------------------------------------
+Project creation sequence:
+
+Create maven project
+Add the dependencies in pom.xml
+Maven project will have 4 sections by default(if not then create them):
+	src/main/java
+	src/main/resources
+	src/test/java
+	src/test/resources
+
+Create the required packages, classes, files in them as per below sequence:
+
+Step 1 --> Create Feature file
+Step 2 --> Create Config.java
+Step 3 --> Create Config.properties
+Step 4 --> Create ConfigReader.java
+Step 5 --> Create Utility.java
+Step 6 --> Create ExcelReader.java
+Step 7 --> Create ExtentReportManager.java
+Step 8 --> Create Login_Page.java
+Step 9 --> Create Product_Page.java
+Step 10 --> Create Cart_Page.java
+Step 11 --> Create CheckOut_Page.java
+Step 12 --> Create ApplicationHooks.java
+Step 13 --> Create LoginPage_Step_Page.java
+Step 14 --> Create ProductPage_Step_Page.java
+Step 15 --> Create CartPage_Step_Page.java
+Step 16 --> Create Excel_StepDefinitios.java
+Step 17 --> Create expected_StepDefinitions.java
+Step 16 --> Create Expected_Result.xlsx
+Step 13 --> Create CartPage_TestRunner.java
+Step 14 --> Create Excel_TestRunner.java
+Step 15 --> Create Outline_TestRunner.java
+
+Create the drivers folder and keep driver in it
+Create the screenshots folder to keep screenshots in it
+Run the tests by using Test class(individual test class) or pom.xml
+
+See the reports in test-output folder(created by testng)
+See the reports in target folder(created by maven)

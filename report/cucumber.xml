@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="3.831" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="SauceDemo Cart_Page" name="Validate user navigates onto ProductDetails page" time="3.644">
+<failure/>
+<system-out><![CDATA[
+Given Chrome is opened and SauceDemo app is opened..........................passed
+When User Select the product................................................undefined
+And User clicks on Add to cart button.......................................skipped
+Then User can add the product in cart.......................................skipped
+When User clicks on basket button...........................................skipped
+Then User navigates on your cart page.......................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
